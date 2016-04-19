@@ -13,5 +13,9 @@ module.exports = angular.module('question').controller('questionInfoController',
             });
         }
         init();
+
+        this.onAnswer = function(answer){
+            return init();
+        };
     }
 ]);

@@ -1,7 +1,7 @@
-<div layout="column" flex style="padding-top: 20px; padding-bottom:20px; font-size:18px;text-align: center">
+<div layout="column" flex="80" flex-offset="10" style="padding-top: 20px; padding-bottom:20px; font-size:18px;text-align: center">
     {{questionInfoController.question.question}}
 </div>
 
 <div ng-repeat="answer in questionInfoController.question.options">
-    <answer-directive answer="answer" index="$index" flex></answer-directive>
+    <answer-directive answer="answer" index="$index" on-answer="questionInfoController.onAnswer" flex></answer-directive>
 </div>

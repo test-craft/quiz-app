@@ -10,7 +10,8 @@ module.exports = angular.module('question').directive('answerDirective',[
             controllerAs : 'answerDirectiveController',
             scope : {
                 answer : '=',
-                index : '='
+                index : '=',
+                onAnswer : '='
             }
         }
     }
