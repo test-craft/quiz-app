@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = angular.module('question').controller('questionInfoController', ['$log', 'questionService', '$timeout',
-    function($log, questionService, $timeout) {
+module.exports = angular.module('question').controller('questionInfoController', ['$scope', '$log', 'questionService', '$timeout',
+    function($scope, $log, questionService, $timeout) {
         $log.info('Question Info Controller Loaded');
 
         var _this = this;
@@ -17,6 +17,8 @@ module.exports = angular.module('question').controller('questionInfoController',
                 _this.question = _question;
                 _this.index = _question.index;
                 $timeout(function() { _this.reload = false; }, 1000);
+            }, function(err){
+                $scope.questionController.goToLastScreen();
             });
             $timeout(function() { _this.animationOn = false; }, 2000);
         }

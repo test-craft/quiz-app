@@ -2,6 +2,18 @@
     <div class="prize-container-header">
         <div class="congrat-text">Congratulations!</div>
     </div>
-    <div>Register And Claim Your Prize</div>
-    <div></div>
+    <div class="prize-container-body" layout-padding>
+        <div style="font-size:20px;">
+            You Are
+        </div>
+        <div style="font-size:36px">
+            {{prizeController.status}}
+        </div>
+        <div>
+            <img ng-src="/app/assets/images/{{prizeController.status}}.png" width="200"/>
+        </div>
+        <div style="font-size:25px">
+            Come and get your prize
+        </div>
+    </div>
 </div>

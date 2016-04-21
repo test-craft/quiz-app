@@ -7,12 +7,11 @@ module.exports = angular.module('prize')
                 .state('core.prize', {
                     url: '/prize',
                     views : {
-                        question : {
+                        core : {
                             templateUrl: '/app/modules/prize/partials/prize.partial.html',
                             controller: 'prizeController as prizeController'
                         }
-                    },
-                    params: { winnerLevel: '' }
+                    }
                 });
         }
     ]);

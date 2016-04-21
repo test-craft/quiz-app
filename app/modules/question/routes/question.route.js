@@ -12,6 +12,11 @@ module.exports = angular.module('question')
                            templateUrl: '/app/modules/question/partials/question.partial.html',
                            controller: 'questionController as questionController'
                        }
+                   },
+                   resolve : {
+                       load : function(questionService){
+                           return questionService.loadQuestions();
+                       }
                    }
                })
                .state('core.question.info', {

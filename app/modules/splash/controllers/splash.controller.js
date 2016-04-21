@@ -6,6 +6,6 @@ module.exports = angular.module('splash').controller('splashController', ['$log'
 
         $timeout(function(){
             $state.go('core.question.info');
-        }, 1500);
+        }, 3000);
     }
 ]);
