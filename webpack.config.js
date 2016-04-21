@@ -13,7 +13,7 @@ module.exports = {
     context: path.resolve(__dirname + '/app'),
     //entry: './app.js',
     entry: [
-        'webpack-dev-server/client?http://0.0.0.0:9999',
+        'webpack-dev-server/client?http://0.0.0.0:8080',
         './app.js'
     ],
     output: {

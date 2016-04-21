@@ -22,6 +22,16 @@ module.exports = angular.module('question')
                            controller: 'questionInfoController as questionInfoController'
                        }
                    }
+               })
+               .state('core.question.results', {
+                   url: '/results',
+                   views : {
+                       question : {
+                           templateUrl: '/app/modules/question/partials/results.partial.html',
+                           controller: 'resultsController as resultsController'
+                       }
+                   },
+                   params: { winnerLevel: '' }
                });
        }
     ]);

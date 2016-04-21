@@ -1,0 +1,25 @@
+
+.prize-container {
+  background: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+
+.prize-container-header {
+  width: 100%;
+  height: 75px;
+  float: left;
+  background: #39d1c2; /* Old browsers */
+  background: -moz-linear-gradient(left,  #39d1c2 0%, #11a5d8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #39d1c2 0%,#11a5d8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #39d1c2 0%,#11a5d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39d1c2', endColorstr='#11a5d8',GradientType=1 ); /* IE6-9 */
+}
+
+.congrat-text {
+  color: #FFFFFF;
+  font-size: 25px;
+  width: 200px;
+  margin: 15px auto 0 auto;
+}

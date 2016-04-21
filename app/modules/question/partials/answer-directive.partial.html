@@ -1,12 +1,12 @@
-<div layout="column" flex style="padding-top: 20px;">
-    <div class="answer-content" ng-click="onAnswer(answer)">
-        <div class="answer-circle">
-            <div class="inner-text">
-                {{index + 1}}
-            </div>
+<div class="answer-content" ng-click="answerDirectiveController.answeredQuestion()"
+     ng-class="{ 'right-answer': answerDirectiveController.answered && answerDirectiveController.rightAnswer,
+                'wrong-answer': answerDirectiveController.answered && !answerDirectiveController.rightAnswer }">
+    <div class="answer-circle">
+        <div class="inner-text">
+            {{index + 1}}
         </div>
-        <div class="answer-text">
-            {{answer}}
-        </div>
+    </div>
+    <div class="answer-text">
+        {{answer.answer}}
     </div>
 </div>

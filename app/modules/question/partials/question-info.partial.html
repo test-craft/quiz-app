@@ -1,7 +1,14 @@
-<div layout="column" flex="80" flex-offset="10" style="padding-top: 20px; padding-bottom:20px; font-size:18px;text-align: center">
-    {{questionInfoController.question.question}}
+<div class="question-container-outer">
+    <div class="question-container" ng-class="{ 'question-animation' : questionInfoController.reload }">
+        {{questionInfoController.question.question}}
+    </div>
 </div>
 
-<div ng-repeat="answer in questionInfoController.question.options">
-    <answer-directive answer="answer" index="$index" on-answer="questionInfoController.onAnswer" flex></answer-directive>
+<div ng-repeat="answer in questionInfoController.question.options track by $index" class="answer-container"
+     ng-class="{ 'animation1': $index === 0 && questionInfoController.animationOn,
+                'animation2': $index === 1 && questionInfoController.animationOn,
+                'animation3': $index === 2 && questionInfoController.animationOn,
+                'animation4': $index === 3 && questionInfoController.animationOn }">
+    <answer-directive answer="answer" index="$index" outer-index="questionInfoController.index"
+                      on-answer="questionInfoController.onAnswer"></answer-directive>
 </div>

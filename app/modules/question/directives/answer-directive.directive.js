@@ -11,6 +11,7 @@ module.exports = angular.module('question').directive('answerDirective',[
             scope : {
                 answer : '=',
                 index : '=',
+                outerIndex : '=',
                 onAnswer : '='
             }
         }

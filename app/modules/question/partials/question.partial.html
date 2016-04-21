@@ -1,3 +1,19 @@
-<div layout-align="center start" layout="row" layout-fill class="question-base" layout-padding>
-    <ui-view name="question" flex layout-fill/>
+<div class="inner-header">
+    <div class="header-area1">
+        <div class="time-elapsed">Time Elapsed</div>
+        <div class="elapsed-minutes">{{questionController.minutes}}&nbsp;:&nbsp;</div>
+        <div class="elapsed-seconds">{{questionController.seconds}}</div>
+    </div>
+    <div class="header-area2">
+        <div class="time-elapsed">{{questionController.rightSectionText}}</div>
+        <div class="current-question">{{questionController.getCurrentQuestionIndex()}}&nbsp;</div>
+        <div class="total-questions">/&nbsp;{{questionController.totalQuestions}}</div>
+    </div>
+</div>
+
+<ui-view name="question" class="question-base"></ui-view>
+
+<div class="done-btn" ng-if="questionController.getQuestionCounter() >= 5" ng-show="questionController.hideDone"
+     ng-click="questionController.goToLastScreen()">
+    Get My Score
 </div>

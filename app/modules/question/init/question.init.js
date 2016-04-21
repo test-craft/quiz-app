@@ -11,7 +11,8 @@ module.exports = function(questionModule){
         controllers : [
             require('../controllers/question.controller'),
             require('../controllers/question-info.controller'),
-            require('../controllers/answer-directive.controller')
+            require('../controllers/answer-directive.controller'),
+            require('../controllers/results.controller')
         ],
         services : [
             require('../service/question.service')
