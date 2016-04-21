@@ -51,7 +51,7 @@ module.exports = {
         ]
     },
     plugins: isProduction ? [
-        //new webpack.optimize.UglifyJsPlugin({minimize: false, mangle : false})
+        new webpack.optimize.UglifyJsPlugin({minimize: false, mangle : false})
     ] : [],
 
     devServer: {
