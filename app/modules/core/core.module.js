@@ -1,5 +1,7 @@
 'use strict';
 
+require('jquery/dist/jquery.js');
+
 require('restangular');
 require('angular-local-storage');
 require('angular-moment/angular-moment.min.js');
@@ -10,7 +12,6 @@ require('angular-loading-bar/build/loading-bar.css');
 
 require('angular-material-data-table/dist/md-data-table.css');
 require('angular-material-data-table/dist/md-data-table.js');
-
 
 var coreModule = angular.module('core', [
     require('angular-sanitize'),
@@ -23,6 +24,7 @@ var coreModule = angular.module('core', [
     'angular-loading-bar',
     'md.data.table',
 ]);
+
 
 // Intialize
 require('./init/core.init')(coreModule);

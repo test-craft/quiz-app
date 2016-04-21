@@ -87,8 +87,8 @@
 }
 
 .done-btn {
+  bottom:20px;
   position: absolute;
-  bottom: 20px;
   left: calc(50% - 62px);
   color: $secondary-color;
   background: #FFFFFF;
@@ -96,6 +96,16 @@
   border: 1px solid $secondary-color;
   border-radius: 44px;
   font-size: 17px;
+}
+
+
+.done-btn:disabled {
+  background-color: #D6D6D6;
+  color: #A9A9A9;
+  border-color: #565656;
+}
+
+.done-btn-position {
 }
 
 .done-btn:active {
@@ -234,10 +244,10 @@ answer-directive {
 }
 
 .register-outer-container {
-  background: #FFFFFF;
   height: 100%;
   width: 100%;
   float: left;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAI0lEQVQYV2NkIBIwgtStWrXqf1hYGJiNC+CVRNY0qhBv0AMAsKgECyGgekgAAAAASUVORK5CYII=") rgb(241, 241, 241);
 }
 
 .register-text {

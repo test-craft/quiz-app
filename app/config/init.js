@@ -11,7 +11,8 @@ module.exports = function(){
     var modules = [
         'core',
         'splash',
-        'question'
+        'question',
+        'prize'
     ];
 
     var dep = [];

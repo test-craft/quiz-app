@@ -1,4 +1,33 @@
 <div class="register-outer-container">
     <div class="register-text">Register And Claim Your Prize</div>
-    <div></div>
+    <!-- Begin MailChimp Signup Form -->
+
+    <form action="//testcraft.us12.list-manage.com/subscribe/post?u=fcba379b6263ae7d8e566108a&amp;id=c5c642e677" method="post" id="mc-embedded-subscribe-form" name="subForm" novalidate>
+        <div flex="80" flex-offset="10">
+            <md-input-container layout-fill>
+                <label>Email</label>
+                <input required type="email" value="" name="EMAIL" ng-model="EMAIL" ng-pattern="/^.+@.+\..+$/" >
+                <div ng-messages="subForm.EMAIL.$error" role="alert" >
+                    <div ng-message="required">This field is required</div>
+                    <div ng-message="pattern">Incorrect Email</div>
+                </div>
+            </md-input-container>
+        </div>
+        <div flex="80" flex-offset="10" style="margin-top:10px">
+            <md-input-container layout-fill>
+                <label>Full Name</label>
+                <input required type="text" value="" name="FNAME"  ng-model="FNAME">
+                <div ng-messages="subForm.FNAME.$error" role="alert" required>
+                    <div ng-message="required">This field is required</div>
+                </div>
+            </md-input-container>
+        </div>
+        <div flex style="margin-top:10px">
+            <div class="clear" style="text-align:center">
+                <input type="submit" value="Take it now" name="subscribe" id="mc-embedded-subscribe" class="done-btn" ng-disabled="subForm.$invalid">
+            </div>
+        </div>
+    </form>
+
+
 </div>

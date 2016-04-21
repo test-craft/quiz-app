@@ -13,7 +13,7 @@
 
 <ui-view name="question" class="question-base"></ui-view>
 
-<div class="done-btn" ng-if="questionController.getQuestionCounter() >= 5" ng-show="questionController.hideDone"
+<div class="done-btn done-btn-position" ng-if="questionController.getQuestionCounter() >= 5" ng-show="questionController.hideDone"
      ng-click="questionController.goToLastScreen()">
     Get My Score
 </div>
