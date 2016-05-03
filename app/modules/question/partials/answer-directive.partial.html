@@ -1,6 +1,7 @@
 <div class="answer-content" ng-click="answerDirectiveController.answeredQuestion()"
      ng-class="{ 'right-answer': answerDirectiveController.answered && answerDirectiveController.rightAnswer,
-                'wrong-answer': answerDirectiveController.answered && !answerDirectiveController.rightAnswer }">
+                'wrong-answer': answerDirectiveController.answered && !answerDirectiveController.rightAnswer ,
+                'right-answer': answerDirectiveController.displayAnswer}">
     <div class="answer-circle">
         <div class="inner-text">
             {{index + 1}}

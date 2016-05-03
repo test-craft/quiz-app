@@ -6,7 +6,8 @@
     </div>
     <div class="header-area2">
         <div class="time-elapsed">{{questionController.rightSectionText}}</div>
-        <div class="current-question">{{questionController.getCurrentQuestionIndex()}}&nbsp;</div>
+        <div class="current-question" ng-if="questionController.rightSectionText.indexOf('Right') === -1">{{questionController.getCurrentQuestionIndex()}}&nbsp;</div>
+        <div class="current-question" ng-if="questionController.rightSectionText.indexOf('Right') > -1">{{questionController.getCorrectAnswers()}}&nbsp;</div>
         <div class="total-questions">/&nbsp;{{questionController.totalQuestions}}</div>
     </div>
 </div>

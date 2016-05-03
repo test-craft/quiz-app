@@ -25,7 +25,7 @@ module.exports = angular.module('question').controller('questionInfoController',
         init();
 
         this.onAnswer = function() {
-            $timeout(init, 500);
+            $timeout(init, 2000);
         };
     }
 ]);

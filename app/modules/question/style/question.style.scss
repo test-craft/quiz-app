@@ -193,6 +193,69 @@
   background: rgba(255, 61, 0, 0.3) !important;
 }
 
+.blinking-answer {
+  -webkit-animation: 0.4s blink step-end infinite;
+  -moz-animation: 0.4s blink step-end infinite;
+  -ms-animation: 0.4s blink step-end infinite;
+  -o-animation: 0.4s blink step-end infinite;
+  animation: 0.4s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    border: 2px solid $secondary-background-color !important;
+    background: rgba(58, 210, 194, 0.3) !important;
+  }
+  50% {
+    border: 2px solid #00B0FF !important;
+    background-color: #FFFFFF !important;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    border: 2px solid $secondary-background-color !important;
+    background: rgba(58, 210, 194, 0.3) !important;
+  }
+  50% {
+    border: 2px solid #00B0FF !important;
+    background-color: #FFFFFF !important;
+  }
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    border: 2px solid $secondary-background-color !important;
+    background: rgba(58, 210, 194, 0.3) !important;
+  }
+  50% {
+    border: 2px solid #00B0FF !important;
+    background-color: #FFFFFF !important;
+  }
+}
+
+@-ms-keyframes blink {
+  from, to {
+    border: 2px solid $secondary-background-color !important;
+    background: rgba(58, 210, 194, 0.3) !important;
+  }
+  50% {
+    border: 2px solid #00B0FF !important;
+    background-color: #FFFFFF !important;
+  }
+}
+
+@-o-keyframes blink {
+  from, to {
+    border: 2px solid $secondary-background-color !important;
+    background: rgba(58, 210, 194, 0.3) !important;
+  }
+  50% {
+    border: 2px solid #00B0FF !important;
+    background-color: #FFFFFF !important;
+  }
+}
+
 @keyframes answer-animation {
   0% { transform: translate3d(0, 1000px, 0); }
   50% { transform: translate3d(0, 500px, 0); }

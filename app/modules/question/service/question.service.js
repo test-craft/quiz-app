@@ -33,6 +33,10 @@ module.exports = angular.module('question').factory('questionService', ['$q', '$
                 return questions[questionIndex].answer === answerIndex;
             },
 
+            getAnswer : function(questionIndex) {
+                return questions[questionIndex].answer;
+            },
+
             getTotalQuestions : function() {
                 return questions.length;
             },

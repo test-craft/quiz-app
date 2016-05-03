@@ -37,6 +37,10 @@ module.exports = angular.module('question').controller('questionController', ['$
             return questionService.getCurrentQuestionIndex();
         };
 
+        this.getCorrectAnswers = function() {
+            return questionService.getRightAnswersCounter();
+        };
+
         this.getQuestionCounter = function() {
             //var tmp = questionService.getQuestionCounter();
             //if (tmp > self.totalQuestions) {
