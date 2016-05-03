@@ -25,7 +25,7 @@ module.exports = angular.module('question').controller('questionController', ['$
 
             duration = moment.duration(duration.asSeconds() + interval, 'seconds');
 
-            self.seconds = Math.round(duration.asSeconds());
+            self.seconds = Math.round(duration.asSeconds() % 60);
             self.minutes = Math.round(duration.asMinutes());
             },
             1000

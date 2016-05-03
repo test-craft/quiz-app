@@ -13,11 +13,11 @@ module.exports = angular.module('question').controller('answerDirectiveControlle
         $rootScope.$on('onDisplayAnswer', function(){
             if (questionService.getAnswer($scope.outerIndex) === $scope.index){
                 _this.displayAnswer = true;
-            }
 
-            $timeout(function() {
-                _this.displayAnswer = false;
-            }, TIMEOUT);
+                $timeout(function() {
+                    _this.displayAnswer = false;
+                }, TIMEOUT);
+            }
         });
 
         this.answeredQuestion = function() {
