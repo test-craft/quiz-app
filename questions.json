@@ -152,5 +152,16 @@
         ],
         "answer"   : 1,
         "index"    : 13
+    },
+    {
+        "question" : "What science fiction writer has authored the following quality-related law (also known as Sturgeon’s law): “ninety percent of everything is crap”",
+        "options"  : [
+            { "answer": "Douglas Adams", "id": 0 },
+            { "answer": "Theodore Sturgeon", "id": 1 },
+            { "answer": "Isaac Asimov", "id": 2 },
+            { "answer": "Orson Scott Card", "id": 3 }
+        ],
+        "answer"   : 1,
+        "index"    : 14
     }
 ]

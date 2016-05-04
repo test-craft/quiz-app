@@ -8,6 +8,8 @@ module.exports = angular.module('question').factory('questionService', ['$q', '$
         var questions = [];
 
         var index = 0;
+        var startAt = 0;
+        var isDone = false;
 
         return {
             loadQuestions : function(){
@@ -15,18 +17,29 @@ module.exports = angular.module('question').factory('questionService', ['$q', '$
                 return $http.get('http://172.15.55.1:9999/questions.json').then(function(response){
                     questions = response.data;
 
-                    return questions[0];
+                    index = Math.floor((Math.random() * 10) + 1);
+                    startAt = index;
+
+
+                    return questions[index];
                 });
             },
 
             getNextQuestion : function() {
-                counter++;
-                if (index >= questions.length){
+                if (isDone) {
                     return $q.reject();
                 }
 
+                counter++;
                 var question = questions[index];
                 index++;
+                if (index >= questions.length){
+                    index = 0;
+                }
+
+                if (index === startAt){
+                    isDone = true;
+                }
                 return $q.resolve(question);
             },
 
