@@ -1,68 +1,145 @@
 [
     {
-        "question" : "First Question?",
+        "question" : "The famous painter that once said: “Computers Are Useless. They Can Only Give You Answers",
         "options"  : [
-            { "answer": "Answer #1", "id": 0 },
-            { "answer": "Answer #2", "id": 1 },
-            { "answer": "Answer #3", "id": 2 },
-            { "answer": "Answer #4", "id": 3 }
+            { "answer": "Pablo Picasso", "id": 0 },
+            { "answer": "Salvador Dali", "id": 1 },
+            { "answer": "Vincent Van Gogh", "id": 2 },
+            { "answer": "Leonardo da Vinci", "id": 3 }
         ],
         "answer"   : 0,
         "index"    : 0
     },
     {
-        "question" : "Second Question?",
+        "question" : "An optimist who predicted in 2004: “Spam will be a thing of the past in two years’ time.”",
         "options"  : [
-            { "answer": "Answer #1", "id": 0 },
-            { "answer": "Answer #2", "id": 1 },
-            { "answer": "Answer #3", "id": 2 },
-            { "answer": "Answer #4", "id": 3 }
+            { "answer": "Bill Gates", "id": 0 },
+            { "answer": "Steve Jobs", "id": 1 },
+            { "answer": "Mark Zuckerberg", "id": 2 },
+            { "answer": "John Doe", "id": 3 }
         ],
-        "answer"   : 1,
+        "answer"   : 0,
         "index"    : 1
     },
     {
-        "question" : "Third Question?",
+        "question" : "What was the most famous invention of the person who said in 1995: “I predict the Internet will soon go spectacularly supernova and in 1996 catastrophically collapse.”",
         "options"  : [
-            { "answer": "Answer #1", "id": 0 },
-            { "answer": "Answer #2", "id": 1 },
-            { "answer": "Answer #3", "id": 2 },
-            { "answer": "Answer #4", "id": 3 }
+            { "answer": "E-Mail", "id": 0 },
+            { "answer": "Ethernet", "id": 1 },
+            { "answer": "Modem", "id": 2 },
+            { "answer": "Vending Machine", "id": 3 }
         ],
-        "answer"   : 2,
+        "answer"   : 1,
         "index"    : 2
     },
     {
-        "question" : "Fourth Question?",
+        "question" : "What was the Award won by the man who once said: “One man's constant is another man's variable”",
         "options"  : [
-            { "answer": "Answer #1", "id": 0 },
-            { "answer": "Answer #2", "id": 1 },
-            { "answer": "Answer #3", "id": 2 },
-            { "answer": "Answer #4", "id": 3 }
+            { "answer": "Oscars", "id": 0 },
+            { "answer": "Grammy", "id": 1 },
+            { "answer": "Turing", "id": 2 },
+            { "answer": "Darwin", "id": 3 }
         ],
-        "answer"   : 3,
+        "answer"   : 2,
         "index"    : 3
     },
     {
-        "question" : "Fifth Question?",
+        "question" : "What Operating System was developed by a man who once said: “Software is like sex; it's better when it's free”",
         "options"  : [
-            { "answer": "Answer #1", "id": 0 },
-            { "answer": "Answer #2", "id": 1 },
-            { "answer": "Answer #3", "id": 2 },
-            { "answer": "Answer #4", "id": 3 }
+            { "answer": "DOS", "id": 0 },
+            { "answer": "Unix", "id": 1 },
+            { "answer": "Windows", "id": 2 },
+            { "answer": "Linux", "id": 3 }
         ],
-        "answer"   : 0,
+        "answer"   : 3,
         "index"    : 4
     },
     {
-        "question" : "Six Question?",
+        "question" : "What programming language was developed by the man who said: “There are only two kinds of programming languages: those people always bitch about and those nobody uses.”",
         "options"  : [
-            { "answer": "Answer #1", "id": 0 },
-            { "answer": "Answer #2", "id": 1 },
-            { "answer": "Answer #3", "id": 2 },
-            { "answer": "Answer #4", "id": 3 }
+            { "answer": "Cobol", "id": 0 },
+            { "answer": "Fortran", "id": 1 },
+            { "answer": "C++", "id": 2 },
+            { "answer": "Smalltalk", "id": 3 }
+        ],
+        "answer"   : 2,
+        "index"    : 5
+    },
+    {
+        "question" : "What algorithm was created by the man who said: “If debugging is the process of removing software bugs, then programming must be the process of putting them in.”",
+        "options"  : [
+            { "answer": "Dijkstra algorithm", "id": 0 },
+            { "answer": "Bubble Sort", "id": 1 },
+            { "answer": "Knapsack", "id": 2 },
+            { "answer": "Breadth-first search", "id": 3 }
+        ],
+        "answer"   : 0,
+        "index"    : 6
+    },
+    {
+        "question" : "Name of the company founded by the man who ones said: “There’s just not that many videos I want to watch”",
+        "options"  : [
+            { "answer": "Facebook", "id": 0 },
+            { "answer": "YouTube", "id": 1 },
+            { "answer": "McDonald’s", "id": 2 },
+            { "answer": "Paypal", "id": 3 }
         ],
         "answer"   : 1,
-        "index"    : 5
+        "index"    : 7
+    },
+    {
+        "question" : "Who was the oracle that predicted in 2003: “The subscription model of buying music is bankrupt. I think you could make available the Second Coming in a subscription model and it might not be successful.”",
+        "options"  : [
+            { "answer": "Steve Jobs", "id": 0 },
+            { "answer": "Steve Balmer", "id": 1 },
+            { "answer": "Steve Buscemi", "id": 2 },
+            { "answer": "Steve Wozniak", "id": 3 }
+        ],
+        "answer"   : 0,
+        "index"    : 8
+    },
+    {
+        "question" : "The guide written by the man who once said: A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.",
+        "options"  : [
+            { "answer": "The Complete Idiot's", "id": 0 },
+            { "answer": "The Famous Five's", "id": 1 },
+            { "answer": "Celebrity Bride", "id": 2 },
+            { "answer": "The Hitchhiker's", "id": 3 }
+        ],
+        "answer"   : 3,
+        "index"    : 9
+    },
+    {
+        "question" : "What was the profession of the following quote author: “The internet is a great way to get on the net.”",
+        "options"  : [
+            { "answer": "Mailman", "id": 0 },
+            { "answer": "Undertaker", "id": 1 },
+            { "answer": "Politician", "id": 2 },
+            { "answer": "Footbal Player", "id": 3 }
+        ],
+        "answer"   : 2,
+        "index"    : 10
+    },
+    {
+        "question" : "What sport the author of the following sport excelled at:”Computers are like bikinis. They save people a lot of guesswork”.",
+        "options"  : [
+            { "answer": "Curling", "id": 0 },
+            { "answer": "Baseball", "id": 1 },
+            { "answer": "Soccer", "id": 2 },
+            { "answer": "Petanque", "id": 3 }
+        ],
+        "answer"   : 1,
+        "index"    : 11
+    },
+    {
+        "question" : "Who’s the modest person that once said: “I have no special talent. I am only passionately curious”",
+        "options"  : [
+            { "answer": "Stephen Hawking", "id": 0 },
+            { "answer": "Pythagoras", "id": 1 },
+            { "answer": "Albert Einstein", "id": 2 },
+            { "answer": "Isaac Newton", "id": 3 }
+        ],
+        "answer"   : 2,
+        "index"    : 12
     }
 ]

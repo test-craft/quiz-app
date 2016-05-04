@@ -11,7 +11,8 @@ module.exports = angular.module('question').factory('questionService', ['$q', '$
 
         return {
             loadQuestions : function(){
-                return $http.get('http://test-yourself.testcraft.io/questions.json').then(function(response){
+                //return $http.get('http://test-yourself.testcraft.io/questions.json').then(function(response){
+                return $http.get('http://172.15.55.1:9999/questions.json').then(function(response){
                     questions = response.data;
 
                     return questions[0];
