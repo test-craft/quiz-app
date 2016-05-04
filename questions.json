@@ -141,5 +141,16 @@
         ],
         "answer"   : 2,
         "index"    : 12
+    },
+    {
+        "question" : "What law is defined as follows:”Don’t worry if it doesn’t work right. If everything did, you’d be out of a job.”",
+        "options"  : [
+            { "answer": "Newton's 2nd law", "id": 0 },
+            { "answer": "Mosher’s law", "id": 1 },
+            { "answer": "Moore’s law", "id": 2 },
+            { "answer": "Law of reflection", "id": 3 }
+        ],
+        "answer"   : 1,
+        "index"    : 13
     }
 ]
